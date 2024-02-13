@@ -29,7 +29,7 @@ def get_relative_path(class_img: str) -> List[str]:
     return image_rel_path
 
 
-def main() -> str:
+def ann1() -> str:
 
     cat_abs_paths = get_absolute_path('cat')
     cat_rel_paths = get_relative_path('cat')
@@ -45,8 +45,7 @@ def main() -> str:
             writer.writerow([abs_path, rel_path, 'dog'])
 
 
-if __name__ == "__main__":
-    main()
+
 
 
 
